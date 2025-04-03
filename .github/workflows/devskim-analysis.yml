@@ -32,3 +32,10 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: devskim-results.sarif
+
+      - name: PolyAPI Deployment Action (Python)
+        uses: polyapi/poly-deployment-action-py@v0.0.4
+        with:
+          poly_api_key: 
+          poly_api_base_url: 
+          
