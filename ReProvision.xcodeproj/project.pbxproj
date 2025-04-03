@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DBAF5A4306BF745341EAF52 /* libPods-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F4B23FBD985DB9E772CEE /* libPods-tvOS.a */; };
-		35ABBF53D7310973DF771765 /* libPods-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13150ECC260FDA5C8CB28A39 /* libPods-macOS.a */; };
-		637C3F63CA181399448157F2 /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66076B4C9A80D2505D3BF023 /* libPods-iOS.a */; };
+		3B3E677D2A6FFE569A794FD9 /* libPods-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1AB945FDBB7F2AAFBD5777 /* libPods-macOS.a */; };
 		87BDA6FD237821CA00EA4540 /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BDA6FC237821CA00EA4540 /* AuthKit.h */; };
 		87BDA6FE237821CA00EA4540 /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BDA6FC237821CA00EA4540 /* AuthKit.h */; };
 		87BDA7032378223700EA4540 /* AuthKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BDA7022378222400EA4540 /* AuthKit.tbd */; };
@@ -19,6 +17,7 @@
 		87BDA7082378225F00EA4540 /* AuthKitUI.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BDA7012378222400EA4540 /* AuthKitUI.tbd */; };
 		87BDA7092378226C00EA4540 /* AuthKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BDA7022378222400EA4540 /* AuthKit.tbd */; };
 		87BDA70A2378226C00EA4540 /* AuthKitUI.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BDA7012378222400EA4540 /* AuthKitUI.tbd */; };
+		A2480C4094B7EE4C0EBFC788 /* libPods-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300C810D345A714A256C0D56 /* libPods-iOS.a */; };
 		C90AD51E20697F23008B2F2B /* RPVNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AD51D20697F23008B2F2B /* RPVNotificationManager.m */; };
 		C90AD5212069968E008B2F2B /* RPVBackgroundSigningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AD5202069968E008B2F2B /* RPVBackgroundSigningManager.m */; };
 		C91FFB3F211F8C82005A850E /* RPVStickyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91FFB3E211F8C82005A850E /* RPVStickyScrollView.m */; };
@@ -288,9 +287,13 @@
 		CF42CC922609F1B200D36129 /* apple-ios-g3.pem in Resources */ = {isa = PBXBuildFile; fileRef = CF42CC912609F1B200D36129 /* apple-ios-g3.pem */; };
 		CF70B4D9270D7823009B98A8 /* IOKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF70B4D8270D7812009B98A8 /* IOKit.tbd */; };
 		CF7C2CEA25F7A68500083AB2 /* RPVAppID.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7C2CE925F7A68500083AB2 /* RPVAppID.m */; };
+		CF84E6F529052640001A1D09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E7C2BC20EE296500FDF3B0 /* Foundation.framework */; };
+		CF84E70129052640001A1D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF84E70029052640001A1D09 /* main.m */; };
+		CF84E7062905333E001A1D09 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF84E6EE2904F949001A1D09 /* CoreServices.framework */; };
 		CFE0CBFB26C984DE0033B63E /* RPVAppIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE0CBFA26C984DE0033B63E /* RPVAppIDViewController.m */; };
 		CFE0CBFE26C999910033B63E /* RPVEntitlementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE0CBFD26C999910033B63E /* RPVEntitlementsViewController.m */; };
 		CFFBA88825F574FE00C93D9F /* RPVAppIdsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFBA88725F574FE00C93D9F /* RPVAppIdsLabel.m */; };
+		DB23FFEBF86D9F73823F7558 /* libPods-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D13C87CE8B9B67576BA16069 /* libPods-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +318,13 @@
 			remoteGlobalIDString = C9E7C2BB20EE296400FDF3B0;
 			remoteInfo = "iOS Daemon";
 		};
+		CF84E70729053360001A1D09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C6EA3A2004257E00211FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF84E6F329052640001A1D09;
+			remoteInfo = reprovision.postinst;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -332,20 +342,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08B0FC3241787ECEBBB87C2C /* Pods-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-tvOS/Pods-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		13150ECC260FDA5C8CB28A39 /* libPods-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66076B4C9A80D2505D3BF023 /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		716AA31A6C5830020754490E /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		19F7D4CC632719EE69DB73E1 /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.release.xcconfig"; path = "Target Support Files/Pods-tvOS/Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		300C810D345A714A256C0D56 /* libPods-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1AB945FDBB7F2AAFBD5777 /* libPods-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EF21BED7BD19EDF81B83C8 /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		87BDA6FC237821CA00EA4540 /* AuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthKit.h; sourceTree = "<group>"; };
 		87BDA6FF237821FD00EA4540 /* AuthKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = AuthKit.tbd; path = Shared/libProvision/AuthKit.tbd; sourceTree = "<group>"; };
 		87BDA700237821FD00EA4540 /* AuthKitUI.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = AuthKitUI.tbd; path = Shared/libProvision/AuthKitUI.tbd; sourceTree = "<group>"; };
 		87BDA7012378222400EA4540 /* AuthKitUI.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = AuthKitUI.tbd; path = Shared/AuthKitUI.tbd; sourceTree = "<group>"; };
 		87BDA7022378222400EA4540 /* AuthKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = AuthKit.tbd; path = Shared/AuthKit.tbd; sourceTree = "<group>"; };
-		893F4B23FBD985DB9E772CEE /* libPods-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9669FFF3381C8268B42B7CB3 /* Pods-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.release.xcconfig"; path = "Target Support Files/Pods-tvOS/Pods-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		9EBA67566C683270A70EA723 /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A58107A2D0248025D71E1FA2 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		AF1CAA5848151A3E928AECBF /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A41C12D64BEC7E90FE987ED0 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A9ECF0C70BAC317A4D14D0E3 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B3B8E401439EA9C334E22436 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		C90AD51C20697F23008B2F2B /* RPVNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPVNotificationManager.h; sourceTree = "<group>"; };
 		C90AD51D20697F23008B2F2B /* RPVNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPVNotificationManager.m; sourceTree = "<group>"; };
 		C90AD51F2069968E008B2F2B /* RPVBackgroundSigningManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPVBackgroundSigningManager.h; path = "Shared/Application Database/RPVBackgroundSigningManager.h"; sourceTree = "<group>"; };
@@ -668,12 +676,18 @@
 		CF70B51D270D7AD8009B98A8 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
 		CF7C2CE925F7A68500083AB2 /* RPVAppID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPVAppID.m; sourceTree = "<group>"; };
 		CF7C2CEB25F7A69500083AB2 /* RPVAppID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPVAppID.h; sourceTree = "<group>"; };
+		CF84E6EE2904F949001A1D09 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		CF84E6F429052640001A1D09 /* PostInstall */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PostInstall; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF84E70029052640001A1D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF84E70A2905392A001A1D09 /* entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
 		CFE0CBF926C984BC0033B63E /* RPVAppIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPVAppIDViewController.h; sourceTree = "<group>"; };
 		CFE0CBFA26C984DE0033B63E /* RPVAppIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPVAppIDViewController.m; sourceTree = "<group>"; };
 		CFE0CBFC26C9997D0033B63E /* RPVEntitlementsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPVEntitlementsViewController.h; sourceTree = "<group>"; };
 		CFE0CBFD26C999910033B63E /* RPVEntitlementsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPVEntitlementsViewController.m; sourceTree = "<group>"; };
 		CFFBA88725F574FE00C93D9F /* RPVAppIdsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPVAppIdsLabel.m; sourceTree = "<group>"; };
 		CFFBA88925F5751400C93D9F /* RPVAppIdsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPVAppIdsLabel.h; sourceTree = "<group>"; };
+		D13C87CE8B9B67576BA16069 /* libPods-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6067DFA8DD7AAD713798227 /* Pods-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-tvOS/Pods-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -700,7 +714,7 @@
 				87BDA7092378226C00EA4540 /* AuthKit.tbd in Frameworks */,
 				87BDA70A2378226C00EA4540 /* AuthKitUI.tbd in Frameworks */,
 				C96CCE57211A33B0008A249A /* Preferences.tbd in Frameworks */,
-				0DBAF5A4306BF745341EAF52 /* libPods-tvOS.a in Frameworks */,
+				DB23FFEBF86D9F73823F7558 /* libPods-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,7 +735,7 @@
 				C92D374A20502D7300F9F152 /* WebKit.framework in Frameworks */,
 				C938D396200842F7003802FF /* MobileCoreServices.framework in Frameworks */,
 				C9FF57A923902CEC00296719 /* Security.framework in Frameworks */,
-				637C3F63CA181399448157F2 /* libPods-iOS.a in Frameworks */,
+				A2480C4094B7EE4C0EBFC788 /* libPods-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +745,7 @@
 			files = (
 				87BDA7082378225F00EA4540 /* AuthKitUI.tbd in Frameworks */,
 				87BDA7072378225F00EA4540 /* AuthKit.tbd in Frameworks */,
-				35ABBF53D7310973DF771765 /* libPods-macOS.a in Frameworks */,
+				3B3E677D2A6FFE569A794FD9 /* libPods-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,12 +764,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF84E6F129052640001A1D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84E6F529052640001A1D09 /* Foundation.framework in Frameworks */,
+				CF84E7062905333E001A1D09 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		25B27802FF2D573B29DEC669 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF84E6EE2904F949001A1D09 /* CoreServices.framework */,
 				CF70B4D8270D7812009B98A8 /* IOKit.tbd */,
 				87BDA6FF237821FD00EA4540 /* AuthKit.tbd */,
 				87BDA7022378222400EA4540 /* AuthKit.tbd */,
@@ -783,24 +807,23 @@
 				C938D395200842F7003802FF /* MobileCoreServices.framework */,
 				C9313C042005277E000AD4C3 /* Preferences.tbd */,
 				C9E7C2BC20EE296500FDF3B0 /* Foundation.framework */,
-				66076B4C9A80D2505D3BF023 /* libPods-iOS.a */,
-				13150ECC260FDA5C8CB28A39 /* libPods-macOS.a */,
-				893F4B23FBD985DB9E772CEE /* libPods-tvOS.a */,
+				300C810D345A714A256C0D56 /* libPods-iOS.a */,
+				3D1AB945FDBB7F2AAFBD5777 /* libPods-macOS.a */,
+				D13C87CE8B9B67576BA16069 /* libPods-tvOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA38425E600B2B215D255711 /* Pods */ = {
+		86F814B5FE5DC8539CBAEBB4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF1CAA5848151A3E928AECBF /* Pods-iOS.debug.xcconfig */,
-				A58107A2D0248025D71E1FA2 /* Pods-iOS.release.xcconfig */,
-				9EBA67566C683270A70EA723 /* Pods-macOS.debug.xcconfig */,
-				716AA31A6C5830020754490E /* Pods-macOS.release.xcconfig */,
-				08B0FC3241787ECEBBB87C2C /* Pods-tvOS.debug.xcconfig */,
-				9669FFF3381C8268B42B7CB3 /* Pods-tvOS.release.xcconfig */,
+				A9ECF0C70BAC317A4D14D0E3 /* Pods-iOS.debug.xcconfig */,
+				A41C12D64BEC7E90FE987ED0 /* Pods-iOS.release.xcconfig */,
+				64EF21BED7BD19EDF81B83C8 /* Pods-macOS.debug.xcconfig */,
+				B3B8E401439EA9C334E22436 /* Pods-macOS.release.xcconfig */,
+				E6067DFA8DD7AAD713798227 /* Pods-tvOS.debug.xcconfig */,
+				19F7D4CC632719EE69DB73E1 /* Pods-tvOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1129,9 +1152,10 @@
 				C9C6EB352004282A00211FDD /* macOS */,
 				C9C6EA742004280A00211FDD /* Shared */,
 				C96CCE32211A2838008A249A /* tvOS */,
+				CF84E6F629052640001A1D09 /* PostInstall */,
 				C9C6EA432004257E00211FDD /* Products */,
 				25B27802FF2D573B29DEC669 /* Frameworks */,
-				BA38425E600B2B215D255711 /* Pods */,
+				86F814B5FE5DC8539CBAEBB4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1143,6 +1167,7 @@
 				C96CCE31211A2838008A249A /* ReProvision.app */,
 				C964EA2221207FE100AC98E6 /* reprovisiond */,
 				C974027F23B2377F00BA9B25 /* Share.appex */,
+				CF84E6F429052640001A1D09 /* PostInstall */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1598,6 +1623,15 @@
 			path = "App ID";
 			sourceTree = "<group>";
 		};
+		CF84E6F629052640001A1D09 /* PostInstall */ = {
+			isa = PBXGroup;
+			children = (
+				CF84E70029052640001A1D09 /* main.m */,
+				CF84E70A2905392A001A1D09 /* entitlements.plist */,
+			);
+			path = PostInstall;
+			sourceTree = "<group>";
+		};
 		CFFBA88625F574D700C93D9F /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -1652,7 +1686,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C96CCE46211A2839008A249A /* Build configuration list for PBXNativeTarget "tvOS" */;
 			buildPhases = (
-				53FC45EE426D286757D6B5E7 /* [CP] Check Pods Manifest.lock */,
+				B12D54B1AEECCF1891B03B26 /* [CP] Check Pods Manifest.lock */,
 				C9C5922621207C7900DF2E19 /* Copy daemon */,
 				C96CCE2D211A2838008A249A /* Sources */,
 				C96CCE2E211A2838008A249A /* Frameworks */,
@@ -1690,8 +1724,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9C6EA5B2004257E00211FDD /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
-				D9E090A35B56AD801CFE7261 /* [CP] Check Pods Manifest.lock */,
+				4F9F3F388D1E2014CB8FEC52 /* [CP] Check Pods Manifest.lock */,
 				C996746A20EE32D500EEFBD2 /* Move daemon binary into Package */,
+				CF84E7092905353F001A1D09 /* Copy postinst */,
 				CF9E59E8270D016900757D3B /* Change the version */,
 				C9C6EA3E2004257E00211FDD /* Sources */,
 				C9C6EA3F2004257E00211FDD /* Frameworks */,
@@ -1699,11 +1734,12 @@
 				C974027723B234E700BA9B25 /* Embed App Extensions */,
 				C996746420EE30EB00EEFBD2 /* Sign application and create .deb */,
 				CF9E59E6270CF34300757D3B /* Firebase */,
-				02514FD3AD43E438A133FBB0 /* [CP] Copy Pods Resources */,
+				527F317562538E4E332EFC38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF84E70829053360001A1D09 /* PBXTargetDependency */,
 				C996746820EE32BE00EEFBD2 /* PBXTargetDependency */,
 				C974028923B2378000BA9B25 /* PBXTargetDependency */,
 			);
@@ -1716,7 +1752,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9C6EB422004282A00211FDD /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
-				740AB197F6D374F27BAF4008 /* [CP] Check Pods Manifest.lock */,
+				33E65550F681EF6D8D5C1852 /* [CP] Check Pods Manifest.lock */,
 				C9C6EB302004282900211FDD /* Sources */,
 				C9C6EB312004282900211FDD /* Frameworks */,
 				C9C6EB322004282900211FDD /* Resources */,
@@ -1745,6 +1781,22 @@
 			name = "iOS Daemon";
 			productName = iosdaemon;
 			productType = "com.apple.product-type.library.dynamic";
+		};
+		CF84E6F329052640001A1D09 /* PostInstall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF84E70329052640001A1D09 /* Build configuration list for PBXNativeTarget "PostInstall" */;
+			buildPhases = (
+				CF84E6F029052640001A1D09 /* Sources */,
+				CF84E6F129052640001A1D09 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostInstall;
+			productName = reprovision.postinst;
+			productReference = CF84E6F429052640001A1D09 /* PostInstall */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -1789,6 +1841,10 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					CF84E6F329052640001A1D09 = {
+						CreatedOnToolsVersion = 13.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C9C6EA3D2004257E00211FDD /* Build configuration list for PBXProject "ReProvision" */;
@@ -1810,6 +1866,7 @@
 				C96CCE30211A2838008A249A /* tvOS */,
 				C964EA1321207FE100AC98E6 /* tvOS Daemon */,
 				C974027E23B2377F00BA9B25 /* iOS Share Extension */,
+				CF84E6F329052640001A1D09 /* PostInstall */,
 			);
 		};
 /* End PBXProject section */
@@ -1866,7 +1923,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02514FD3AD43E438A133FBB0 /* [CP] Copy Pods Resources */ = {
+		33E65550F681EF6D8D5C1852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9F3F388D1E2014CB8FEC52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527F317562538E4E332EFC38 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1906,7 +2007,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53FC45EE426D286757D6B5E7 /* [CP] Check Pods Manifest.lock */ = {
+		B12D54B1AEECCF1891B03B26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1922,28 +2023,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		740AB197F6D374F27BAF4008 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2006,6 +2085,24 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"Copying application into Package\"\n\n# Clean out existing .app\nrm -rf \"${PROJECT_DIR}/tvOS/Package/Applications/${CONTENTS_FOLDER_PATH}\"\n\nbuiltpath=\"${BUILD_DIR}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/${CONTENTS_FOLDER_PATH}\"\ncp -R $builtpath \"${PROJECT_DIR}/tvOS/Package/Applications/\"\n\n# Sign with entitlements\necho \"Signing with entitlements.xml...\"\nif type \"${iOSOpenDevPath}/bin/ldid2\" > /dev/null;\nthen\n${iOSOpenDevPath}/bin/ldid2 -S\"${PROJECT_DIR}/Shared/entitlements.xml\" \"${PROJECT_DIR}/tvOS/Package/Applications/${EXECUTABLE_PATH}\"\nelif type \"/usr/bin/ldid2\" > /dev/null;\nthen\n/usr/bin/ldid2 -S\"${PROJECT_DIR}/Shared/entitlements.xml\" \"${PROJECT_DIR}/tvOS/Package/Applications/${EXECUTABLE_PATH}\"\nelif type \"/usr/local/bin/ldid2\" > /dev/null;\nthen\n/usr/local/bin/ldid2 -S\"${PROJECT_DIR}/Shared/entitlements.xml\" \"${PROJECT_DIR}/tvOS/Package/Applications/${EXECUTABLE_PATH}\"\nelif type \"ldid2\" > /dev/null;\nthen\nldid2 -S\"${PROJECT_DIR}/Shared/entitlements.xml\" \"${PROJECT_DIR}/tvOS/Package/Applications/${EXECUTABLE_PATH}\"\nelse\necho \"Could not find ldid2 on your system (searched /usr/bin, /usr/local/bin, ${iOSOpenDevPath}/bin/)\"\nexit 1\nfi\n\n# Build package!\n${iOSOpenDevPath}/bin/iosod build -p \"${PROJECT_DIR}/tvOS/PackageVersion.plist\" \"${PROJECT_DIR}/tvOS/Package\" \"${PROJECT_DIR}/tvOS/NitoPackages\"";
 		};
+		CF84E7092905353F001A1D09 /* Copy postinst */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy postinst";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying postinst\"\nbuiltpath=\"${BUILD_DIR}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/PostInstall\"\nchmod +x $buildpath\ncp $builtpath \"${PROJECT_DIR}/iOS/Package/DEBIAN/postinst\"\n\n# We now need to sign the daemon with appropriate entitlements via ldid2\necho \"Signing with entitlements.plist...\"\n${PROJECT_DIR}/bin/ldid2 -S\"${PROJECT_DIR}/PostInstall/entitlements.plist\" \"${PROJECT_DIR}/iOS/Package/DEBIAN/postinst\"\n";
+		};
 		CF9E59E6270CF34300757D3B /* Firebase */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2044,28 +2141,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "MAJOR_VERSION=`(/usr/libexec/PlistBuddy -c \"Print :Major\" \"${PROJECT_DIR}/iOS/PackageVersion.plist\")`\nMINOR_VERSION=`(/usr/libexec/PlistBuddy -c \"Print :Minor\" \"${PROJECT_DIR}/iOS/PackageVersion.plist\")`\nBUGFIX_VERSION=`(/usr/libexec/PlistBuddy -c \"Print :BugFix\" \"${PROJECT_DIR}/iOS/PackageVersion.plist\")`\n\nexport MARKETING_VERSION=`(printf \"%d.%d.%d\" ${MAJOR_VERSION} ${MINOR_VERSION} ${BUGFIX_VERSION})`\nexport VERSION_SUFFIX=`(/usr/libexec/PlistBuddy -c \"Print :Stage\" \"${PROJECT_DIR}/iOS/PackageVersion.plist\")`\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${MARKETING_VERSION}${VERSION_SUFFIX}\" \"${TEMP_DIR}/Preprocessed-Info.plist\"\n";
-		};
-		D9E090A35B56AD801CFE7261 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2340,6 +2415,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF84E6F029052640001A1D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF84E70129052640001A1D09 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2357,6 +2440,11 @@
 			isa = PBXTargetDependency;
 			target = C9E7C2BB20EE296400FDF3B0 /* iOS Daemon */;
 			targetProxy = C996746720EE32BE00EEFBD2 /* PBXContainerItemProxy */;
+		};
+		CF84E70829053360001A1D09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF84E6F329052640001A1D09 /* PostInstall */;
+			targetProxy = CF84E70729053360001A1D09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2479,7 +2567,7 @@
 		};
 		C96CCE44211A2839008A249A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08B0FC3241787ECEBBB87C2C /* Pods-tvOS.debug.xcconfig */;
+			baseConfigurationReference = E6067DFA8DD7AAD713798227 /* Pods-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2512,7 +2600,7 @@
 		};
 		C96CCE45211A2839008A249A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9669FFF3381C8268B42B7CB3 /* Pods-tvOS.release.xcconfig */;
+			baseConfigurationReference = 19F7D4CC632719EE69DB73E1 /* Pods-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2692,7 +2780,7 @@
 		};
 		C9C6EA5C2004257E00211FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF1CAA5848151A3E928AECBF /* Pods-iOS.debug.xcconfig */;
+			baseConfigurationReference = A9ECF0C70BAC317A4D14D0E3 /* Pods-iOS.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2728,7 +2816,7 @@
 		};
 		C9C6EA5D2004257E00211FDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A58107A2D0248025D71E1FA2 /* Pods-iOS.release.xcconfig */;
+			baseConfigurationReference = A41C12D64BEC7E90FE987ED0 /* Pods-iOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2763,7 +2851,7 @@
 		};
 		C9C6EB432004282A00211FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EBA67566C683270A70EA723 /* Pods-macOS.debug.xcconfig */;
+			baseConfigurationReference = 64EF21BED7BD19EDF81B83C8 /* Pods-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -2786,7 +2874,7 @@
 		};
 		C9C6EB442004282A00211FDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 716AA31A6C5830020754490E /* Pods-macOS.release.xcconfig */;
+			baseConfigurationReference = B3B8E401439EA9C334E22436 /* Pods-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -2888,6 +2976,71 @@
 			};
 			name = Release;
 		};
+		CF84E70429052640001A1D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X98FX3N65;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/System/Library/PrivateFrameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "$(THEOS)/vendor/include/**";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(THEOS)/vendor/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				THEOS = /opt/theos;
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.0;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CF84E70529052640001A1D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2X98FX3N65;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(SDKROOT)/System/Library/PrivateFrameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "$(THEOS)/vendor/include/**";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(THEOS)/vendor/lib/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				THEOS = /opt/theos;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.0;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2950,6 +3103,15 @@
 			buildConfigurations = (
 				C9E7C2CD20EE296500FDF3B0 /* Debug */,
 				C9E7C2CE20EE296500FDF3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF84E70329052640001A1D09 /* Build configuration list for PBXNativeTarget "PostInstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF84E70429052640001A1D09 /* Debug */,
+				CF84E70529052640001A1D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
